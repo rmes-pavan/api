@@ -2,3 +2,4 @@ mkdir api
 cd api
 put *json
 put api.sh
+bash api.sh
