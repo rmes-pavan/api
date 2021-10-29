@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "cb1863f3-1a0f-4183-999b-4c96b4f1ee22",
+		"name": "Alarm_api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Toatl_Alarms",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.60.200/api/AlarmListsDate?RequestType=Recent&StartTime=9/6/2021,%202:30:48%20PM&EndTime=9/6/2021,%202:30:48%20PM&Id=0",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"60",
+						"200"
+					],
+					"path": [
+						"api",
+						"AlarmListsDate"
+					],
+					"query": [
+						{
+							"key": "RequestType",
+							"value": "Recent"
+						},
+						{
+							"key": "StartTime",
+							"value": "9/6/2021,%202:30:48%20PM"
+						},
+						{
+							"key": "EndTime",
+							"value": "9/6/2021,%202:30:48%20PM"
+						},
+						{
+							"key": "Id",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "alarm_count",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.60.200/api/acknowledgedetails/count/0",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"60",
+						"200"
+					],
+					"path": [
+						"api",
+						"acknowledgedetails",
+						"count",
+						"0"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

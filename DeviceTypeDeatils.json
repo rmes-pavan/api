@@ -1,0 +1,383 @@
+{
+	"info": {
+		"_postman_id": "b4d258a3-3f73-4459-874c-1e29aedea8ff",
+		"name": "DeviceTypeDeatils",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://192.168.60.{{ip}}/api/Screen?AssetType=ADMIN",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than limit\", function() {\r",
+							"var limit = 500;\r",
+							"pm.expect(pm.response.responseTime, \"Response time was longer than \" + limit + \" ms.\").to.be.below(limit);\r",
+							"console.log(\"Response Time: \" + pm.response.responseTime + \" ms\" + \" / Response Date: \" + pm.response.headers.get(\"Date\"));\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.60.{{ip}}/api/Screen?AssetType=ADMIN",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"60",
+						"{{ip}}"
+					],
+					"path": [
+						"api",
+						"Screen"
+					],
+					"query": [
+						{
+							"key": "AssetType",
+							"value": "ADMIN"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.60.{{ip}}/api/devicetype",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than limit\", function() {\r",
+							"var limit = 500;\r",
+							"pm.expect(pm.response.responseTime, \"Response time was longer than \" + limit + \" ms.\").to.be.below(limit);\r",
+							"console.log(\"Response Time: \" + pm.response.responseTime + \" ms\" + \" / Response Date: \" + pm.response.headers.get(\"Date\"));\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.60.{{ip}}/api/devicetype",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"60",
+						"{{ip}}"
+					],
+					"path": [
+						"api",
+						"devicetype"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.60.{{ip}}/api/GetDevicesTypesdetailsCount",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than limit\", function() {\r",
+							"var limit = 500;\r",
+							"pm.expect(pm.response.responseTime, \"Response time was longer than \" + limit + \" ms.\").to.be.below(limit);\r",
+							"console.log(\"Response Time: \" + pm.response.responseTime + \" ms\" + \" / Response Date: \" + pm.response.headers.get(\"Date\"));\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.60.{{ip}}/api/GetDevicesTypesdetailsCount",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"60",
+						"{{ip}}"
+					],
+					"path": [
+						"api",
+						"GetDevicesTypesdetailsCount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.60.{{ip}}/api/devicetype",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than limit\", function() {\r",
+							"var limit = 500;\r",
+							"pm.expect(pm.response.responseTime, \"Response time was longer than \" + limit + \" ms.\").to.be.below(limit);\r",
+							"console.log(\"Response Time: \" + pm.response.responseTime + \" ms\" + \" / Response Date: \" + pm.response.headers.get(\"Date\"));\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.60.{{ip}}/api/devicetype",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"60",
+						"{{ip}}"
+					],
+					"path": [
+						"api",
+						"devicetype"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.60.{{ip}}/api/registerformat",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than limit\", function() {\r",
+							"var limit = 500;\r",
+							"pm.expect(pm.response.responseTime, \"Response time was longer than \" + limit + \" ms.\").to.be.below(limit);\r",
+							"console.log(\"Response Time: \" + pm.response.responseTime + \" ms\" + \" / Response Date: \" + pm.response.headers.get(\"Date\"));\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.60.{{ip}}/api/registerformat",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"60",
+						"{{ip}}"
+					],
+					"path": [
+						"api",
+						"registerformat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.60.{{ip}}/api/Master/PollInterval",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than limit\", function() {\r",
+							"var limit = 500;\r",
+							"pm.expect(pm.response.responseTime, \"Response time was longer than \" + limit + \" ms.\").to.be.below(limit);\r",
+							"console.log(\"Response Time: \" + pm.response.responseTime + \" ms\" + \" / Response Date: \" + pm.response.headers.get(\"Date\"));\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.60.{{ip}}/api/Master/PollInterval",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"60",
+						"{{ip}}"
+					],
+					"path": [
+						"api",
+						"Master",
+						"PollInterval"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.60.{{ip}}/api/Master/FunctionCode",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than limit\", function() {\r",
+							"var limit = 500;\r",
+							"pm.expect(pm.response.responseTime, \"Response time was longer than \" + limit + \" ms.\").to.be.below(limit);\r",
+							"console.log(\"Response Time: \" + pm.response.responseTime + \" ms\" + \" / Response Date: \" + pm.response.headers.get(\"Date\"));\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.60.{{ip}}/api/Master/FunctionCode",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"60",
+						"{{ip}}"
+					],
+					"path": [
+						"api",
+						"Master",
+						"FunctionCode"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.60.{{ip}}/api/Screen?AssetType=Monitor",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than limit\", function() {\r",
+							"var limit = 500;\r",
+							"pm.expect(pm.response.responseTime, \"Response time was longer than \" + limit + \" ms.\").to.be.below(limit);\r",
+							"console.log(\"Response Time: \" + pm.response.responseTime + \" ms\" + \" / Response Date: \" + pm.response.headers.get(\"Date\"));\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.60.{{ip}}/api/Screen?AssetType=Monitor",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"60",
+						"{{ip}}"
+					],
+					"path": [
+						"api",
+						"Screen"
+					],
+					"query": [
+						{
+							"key": "AssetType",
+							"value": "Monitor"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.60.{{ip}}/api/GetDeviceTypeDetailByDeviceType",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than limit\", function() {\r",
+							"var limit = 500;\r",
+							"pm.expect(pm.response.responseTime, \"Response time was longer than \" + limit + \" ms.\").to.be.below(limit);\r",
+							"console.log(\"Response Time: \" + pm.response.responseTime + \" ms\" + \" / Response Date: \" + pm.response.headers.get(\"Date\"));\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.60.{{ip}}/api/GetDeviceTypeDetailByDeviceType",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"60",
+						"{{ip}}"
+					],
+					"path": [
+						"api",
+						"GetDeviceTypeDetailByDeviceType"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

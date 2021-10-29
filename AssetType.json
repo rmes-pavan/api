@@ -1,0 +1,222 @@
+{
+	"info": {
+		"_postman_id": "16343347-d4ee-4672-b312-3d24421c6ab9",
+		"name": "AssetType",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://192.168.60.ip/api/Screen?AssetType=ADMIN",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than limit\", function() {\r",
+							"var limit = 500;\r",
+							"pm.expect(pm.response.responseTime, \"Response time was longer than \" + limit + \" ms.\").to.be.below(limit);\r",
+							"console.log(\"Response Time: \" + pm.response.responseTime + \" ms\" + \" / Response Date: \" + pm.response.headers.get(\"Date\"));\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.60.{{ip}}/api/Screen?AssetType=ADMIN",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"60",
+						"{{ip}}"
+					],
+					"path": [
+						"api",
+						"Screen"
+					],
+					"query": [
+						{
+							"key": "AssetType",
+							"value": "ADMIN"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.60.ip/api/AssetTypesCount",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than limit\", function() {\r",
+							"var limit = 500;\r",
+							"pm.expect(pm.response.responseTime, \"Response time was longer than \" + limit + \" ms.\").to.be.below(limit);\r",
+							"console.log(\"Response Time: \" + pm.response.responseTime + \" ms\" + \" / Response Date: \" + pm.response.headers.get(\"Date\"));\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.60.{{ip}}/api/AssetTypesCount",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"60",
+						"{{ip}}"
+					],
+					"path": [
+						"api",
+						"AssetTypesCount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.60.ip/api/Master/EntityTypes",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than limit\", function() {\r",
+							"var limit = 500;\r",
+							"pm.expect(pm.response.responseTime, \"Response time was longer than \" + limit + \" ms.\").to.be.below(limit);\r",
+							"console.log(\"Response Time: \" + pm.response.responseTime + \" ms\" + \" / Response Date: \" + pm.response.headers.get(\"Date\"));\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.60.{{ip}}/api/Master/EntityTypes",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"60",
+						"{{ip}}"
+					],
+					"path": [
+						"api",
+						"Master",
+						"EntityTypes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.60.ip/api/Screen?AssetType=Monitor",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than limit\", function() {\r",
+							"var limit = 500;\r",
+							"pm.expect(pm.response.responseTime, \"Response time was longer than \" + limit + \" ms.\").to.be.below(limit);\r",
+							"console.log(\"Response Time: \" + pm.response.responseTime + \" ms\" + \" / Response Date: \" + pm.response.headers.get(\"Date\"));\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.60.{{ip}}/api/Screen?AssetType=Monitor",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"60",
+						"{{ip}}"
+					],
+					"path": [
+						"api",
+						"Screen"
+					],
+					"query": [
+						{
+							"key": "AssetType",
+							"value": "Monitor"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://192.168.60.ip/api/assettypes",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than limit\", function() {\r",
+							"var limit = 500;\r",
+							"pm.expect(pm.response.responseTime, \"Response time was longer than \" + limit + \" ms.\").to.be.below(limit);\r",
+							"console.log(\"Response Time: \" + pm.response.responseTime + \" ms\" + \" / Response Date: \" + pm.response.headers.get(\"Date\"));\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.60.{{ip}}/api/assettypes",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"60",
+						"{{ip}}"
+					],
+					"path": [
+						"api",
+						"assettypes"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
