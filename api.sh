@@ -1,4 +1,4 @@
-newman run Alarm_api.json --env-var ip=79
+newman run Alarm.json --env-var ip=79
 newman run AssetType.json --env-var ip=79
 newman run AssetTypeDetails.json --env-var ip=79
 newman run DataFormat.json --env-var ip=79
