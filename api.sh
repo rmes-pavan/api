@@ -9,4 +9,4 @@ newman run DeviceTypeDeatils.json --env-var ip=79
 newman run Gateway.json --env-var ip=79
 newman run Protocol.json --env-var ip=79
 newman run Units.json --env-var ip=79
-rm -r api
+
